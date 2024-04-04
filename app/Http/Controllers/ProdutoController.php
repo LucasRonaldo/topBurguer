@@ -21,6 +21,9 @@ class ProdutoController extends Controller
 
             ];
         });
+
+
+        return response()->json($produtosComImagem);
     }
 
     public function store(Request $request){
