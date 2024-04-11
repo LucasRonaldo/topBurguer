@@ -14,6 +14,7 @@ class ProdutoController extends Controller
         $produtosComImagem = $produtos->map(function ($produto) {
 
             return [
+                'id'=>$produto->id,
                 'nome' => $produto->nome,
                 'preco' => $produto->preco,
                 'ingredientes' => $produto->ingredientes,
